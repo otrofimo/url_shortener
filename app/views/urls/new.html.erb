@@ -1,0 +1,6 @@
+<h1>Shorten your Url</h1>
+
+<%= form_for @url, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+  <%= f.text_field :long %>
+  <%= f.submit "Shorten" %>
+<% end %>

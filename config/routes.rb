@@ -1,4 +1,11 @@
 UrlShortener::Application.routes.draw do
+ 
+ root :to => 'urls#index'
+ 
+ resources :urls
+ 
+ match "/:id" => 'urls#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
